@@ -1,0 +1,49 @@
+/* Design tokens — single source of truth for the visual system.
+   Swap values here to reskin the whole site. */
+:root {
+  /* Color — softer dark palette (not near-black) */
+  --color-bg: #202a2d;
+  --color-bg-elevated: #26343799;
+  --color-surface: #2a3639;
+  --color-surface-alt: #253134;
+  --color-border: rgba(255, 255, 255, 0.09);
+  --color-border-strong: rgba(255, 255, 255, 0.16);
+
+  --color-text-heading: #f3efe7;
+  --color-text-body: #a9b3b1;
+  --color-text-muted: #7c8886;
+
+  --color-accent: #8fcabb;
+  --color-accent-strong: #7ab8a7;
+  --color-accent-contrast: #16211f;
+
+  --color-accent-warm: #d99a6c;
+
+  /* Typography */
+  --font-heading: "Space Grotesk", "Segoe UI", sans-serif;
+  --font-body: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+
+  --fs-hero: clamp(2.25rem, 4.2vw + 1rem, 3.75rem);
+  --fs-h2: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+  --fs-h3: 1.25rem;
+  --fs-body: 1.0625rem;
+  --fs-small: 0.9375rem;
+  --fs-eyebrow: 0.8125rem;
+
+  /* Spacing scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+
+  /* Layout */
+  --container-width: 72rem;
+  --container-padding: 1.5rem;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.2);
+}

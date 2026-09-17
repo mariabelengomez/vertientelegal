@@ -1,0 +1,235 @@
+/* Header / navigation */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding-block: 1.1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--color-text-heading);
+}
+
+.brand svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-accent);
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.nav-links a {
+  color: var(--color-text-body);
+  font-size: 0.95rem;
+  transition: color 0.15s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-text-heading);
+}
+
+.header-phone {
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 1rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-text-heading);
+  white-space: nowrap;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem;
+  color: var(--color-text-heading);
+}
+
+@media (max-width: 860px) {
+  .nav-links {
+    position: fixed;
+    inset: 4.2rem 0 auto 0;
+    flex-direction: column;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-md) var(--container-padding) var(--space-lg);
+    gap: var(--space-md);
+    transform: translateY(-110%);
+    transition: transform 0.2s ease;
+  }
+
+  .nav-links[data-open="true"] {
+    transform: translateY(0);
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .header-phone {
+    display: none;
+  }
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  padding-block: var(--space-2xl);
+  overflow: hidden;
+}
+
+.hero__waves {
+  position: absolute;
+  inset: 0;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.hero__content {
+  position: relative;
+  max-width: 46rem;
+}
+
+.hero h1 {
+  font-size: var(--fs-hero);
+  margin-bottom: var(--space-md);
+}
+
+.hero__lede {
+  font-size: 1.1rem;
+  max-width: 40rem;
+  margin-bottom: var(--space-lg);
+}
+
+.hero__actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-xl);
+}
+
+.hero__trust {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
+
+.hero__trust strong {
+  color: var(--color-text-heading);
+  font-family: var(--font-heading);
+}
+
+.hero__trust .dot {
+  opacity: 0.5;
+}
+
+/* Booking section */
+.booking-panel {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.booking-panel__info {
+  background: var(--color-surface-alt);
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.booking-panel__info ol {
+  list-style: none;
+  margin: var(--space-md) 0 var(--space-xl);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.booking-panel__info li {
+  display: flex;
+  gap: 0.75rem;
+  color: var(--color-text-body);
+}
+
+.booking-panel__info li span {
+  color: var(--color-accent-warm);
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.booking-panel__form {
+  padding: var(--space-xl) var(--space-lg);
+}
+
+@media (max-width: 900px) {
+  .booking-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CTA banner */
+.cta-banner {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg) var(--space-xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.cta-banner h3 {
+  font-size: 1.5rem;
+  max-width: 28rem;
+}
+
+/* Footer */
+.site-footer {
+  padding-block: var(--space-lg) var(--space-xl);
+  color: var(--color-text-muted);
+  font-size: var(--fs-small);
+}
+
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .booking-panel__info,
+  .booking-panel__form {
+    padding: var(--space-lg) var(--space-md);
+  }
+  .cta-banner {
+    padding: var(--space-lg) var(--space-md);
+  }
+}
