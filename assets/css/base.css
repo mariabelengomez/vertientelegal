@@ -28,6 +28,18 @@ body {
   font-size: var(--fs-body);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+/* Ambient color wash, fixed to the viewport so it stays put while the
+   page scrolls instead of stretching across the whole document height. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--bg-wash);
+  pointer-events: none;
 }
 
 img,

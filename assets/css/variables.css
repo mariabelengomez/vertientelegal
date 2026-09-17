@@ -18,6 +18,16 @@
   --color-accent-contrast: #16211f;
 
   --color-accent-warm: #d99a6c;
+  --color-accent-blue: #7fb0d9;
+  --color-accent-violet: #a894d1;
+
+  /* Ambient background wash — layered radial gradients, kept low-opacity
+     so text stays readable on top. Edit these to reskin the "mood". */
+  --bg-wash:
+    radial-gradient(48% 42% at 12% -8%, rgba(143, 202, 187, 0.20), transparent 60%),
+    radial-gradient(42% 38% at 108% 8%, rgba(217, 154, 108, 0.16), transparent 60%),
+    radial-gradient(46% 40% at 60% 105%, rgba(127, 176, 217, 0.14), transparent 60%),
+    radial-gradient(30% 28% at -5% 60%, rgba(168, 148, 209, 0.10), transparent 60%);
 
   /* Typography */
   --font-heading: "Space Grotesk", "Segoe UI", sans-serif;
