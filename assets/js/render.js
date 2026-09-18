@@ -84,9 +84,10 @@ function renderAreaOptions() {
   const select = document.querySelector("[data-area-select]");
   if (!select) return;
 
-  select.innerHTML = SITE_DATA.practiceAreas
+  const areaOptions = SITE_DATA.practiceAreas
     .map((area) => `<option value="${escapeHTML(area.title)}">${escapeHTML(area.title)}</option>`)
     .join("");
+  select.innerHTML = areaOptions + `<option value="Otros">Otros</option>`;
 }
 
 function renderPhoneNumbers() {
