@@ -1,33 +1,33 @@
 /* Design tokens — single source of truth for the visual system.
    Swap values here to reskin the whole site. */
 :root {
-  /* Color — softer dark palette (not near-black) */
-  --color-bg: #202a2d;
-  --color-bg-elevated: #26343799;
-  --color-surface: #2a3639;
-  --color-surface-alt: #253134;
-  --color-border: rgba(255, 255, 255, 0.09);
-  --color-border-strong: rgba(255, 255, 255, 0.16);
+  /* Color — "Bosque y Oro Antiguo" palette */
+  --color-bg: #16241f;
+  --color-bg-elevated: #1d2f29b3;
+  --color-surface: #1d2f29;
+  --color-surface-alt: #192924;
+  --color-border: rgba(246, 244, 236, 0.09);
+  --color-border-strong: rgba(246, 244, 236, 0.16);
 
-  --color-text-heading: #f3efe7;
-  --color-text-body: #a9b3b1;
-  --color-text-muted: #7c8886;
+  --color-text-heading: #f6f4ec;
+  --color-text-body: #ede7d5;
+  --color-text-muted: #a3a08f;
 
-  --color-accent: #8fcabb;
-  --color-accent-strong: #7ab8a7;
-  --color-accent-contrast: #16211f;
+  --color-accent: #bfa15a;
+  --color-accent-strong: #a68c4e;
+  --color-accent-contrast: #16241f;
 
-  --color-accent-warm: #d99a6c;
-  --color-accent-blue: #7fb0d9;
-  --color-accent-violet: #a894d1;
+  --color-accent-warm: #d1bd8b;
+  --color-accent-blue: #82867a;
+  --color-accent-violet: #8e7e53;
 
   /* Ambient background wash — layered radial gradients, kept low-opacity
      so text stays readable on top. Edit these to reskin the "mood". */
   --bg-wash:
-    radial-gradient(48% 42% at 12% -8%, rgba(143, 202, 187, 0.20), transparent 60%),
-    radial-gradient(42% 38% at 108% 8%, rgba(217, 154, 108, 0.16), transparent 60%),
-    radial-gradient(46% 40% at 60% 105%, rgba(127, 176, 217, 0.14), transparent 60%),
-    radial-gradient(30% 28% at -5% 60%, rgba(168, 148, 209, 0.10), transparent 60%);
+    radial-gradient(48% 42% at 12% -8%, rgba(191, 161, 90, 0.20), transparent 60%),
+    radial-gradient(42% 38% at 108% 8%, rgba(209, 189, 139, 0.16), transparent 60%),
+    radial-gradient(46% 40% at 60% 105%, rgba(130, 134, 122, 0.14), transparent 60%),
+    radial-gradient(30% 28% at -5% 60%, rgba(142, 126, 83, 0.10), transparent 60%);
 
   /* Typography */
   --font-heading: "Space Grotesk", "Segoe UI", sans-serif;
